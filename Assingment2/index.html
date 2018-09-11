@@ -12,6 +12,7 @@
       <div class="row" ng-controller="ListingsController">
         <div class="col-md-6">
           <div class="input-group" id="searchBar">
+
             <!-- 
                 Implement a way to filter through listings using the search bar 
               -->
@@ -25,6 +26,7 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
+
               <!-- 
                   Fill in the rest of the table:
                       * populate the rows with the code and name of each listing
@@ -41,7 +43,7 @@
           </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="jumbotron">
             <h2>Detailed Information</h2>
             <!-- 
@@ -65,12 +67,12 @@
           <div class="jumbotron">
           <form>
             <h2>Add New Listing</h2>
-            <input type = "text" class ="form-control" placeholder = "Code" ng-model = "code"><br>
-            <input type = "text" class ="form-control" placeholder = "Building Name" ng-model = "name"><br>
-            <input type = "text" class ="form-control" placeholder = "Latitude" ng-model = "latitude">;
-            <input type = "text" class ="form-control" placeholder = "Longitude" ng-model = "longitude"><br>
-            <input type = "text" class ="form-control" placeholder = "Address" ng-model = "address"><br>
-            <button type = "button" ng-click ="addListing()" class = "btn btn-success">Add Listing</button><br>
+            <input type = "text" class = "form-control" placeholder = "Code" ng-model = "code"><br>
+            <input type = "text" class = "form-control" placeholder = "Building Name" ng-model = "name"><br>
+            <input type = "text" class = "form-control" placeholder = "Latitude" ng-model = "latitude"><br>
+            <input type = "text" class = "form-control" placeholder = "Longitude" ng-model = "longitude"><br>
+            <input type = "text" class = "form-control" placeholder = "Address" ng-model = "address"><br>
+            <button type = "button" ng-click = "addListing()" class = "btn btn-success">Add Listing</button><br>
           </form>
           </div> 
 
